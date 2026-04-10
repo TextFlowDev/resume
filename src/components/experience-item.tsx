@@ -17,7 +17,7 @@ export function ExperienceItem({ company, title, period, summary }: Props) {
           <div>
             <div className="flex items-center gap-2">
               <BriefcaseIcon className="h-4 w-4 text-cyan-300" />
-              <h3 className="text-base font-semibold text-white">{company}</h3>
+            <h3 className="gradient-card-title text-base font-semibold">{company}</h3>
             </div>
             <p className="text-sm text-cyan-300">{title}</p>
           </div>

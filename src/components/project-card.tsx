@@ -18,7 +18,7 @@ export function ProjectCard({ name, category, summary, impact }: Props) {
           </span>
           <StarIcon className="h-5 w-5 text-emerald-300" />
         </div>
-        <h3 className="mt-4 text-lg font-semibold tracking-tight text-white">{name}</h3>
+        <h3 className="gradient-card-title mt-4 text-lg font-semibold tracking-tight">{name}</h3>
         <p className="mt-3 text-sm leading-7 text-slate-300">{summary}</p>
       </div>
       <div className="rounded-2xl border border-slate-700/70 bg-slate-950/50 p-4 text-sm leading-6 text-slate-200">

@@ -20,7 +20,7 @@ export function SectionHeading({
         <ChevronRightIcon className="h-4 w-4" />
         <p>{eyebrow}</p>
       </div>
-      <h2 className="mt-3 text-2xl font-semibold tracking-tight text-white sm:text-3xl">
+      <h2 className="gradient-heading mt-3 text-2xl font-semibold tracking-tight sm:text-3xl">
         {title}
       </h2>
       {description ? (

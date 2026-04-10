@@ -56,7 +56,7 @@ export default function Home() {
             </div>
 
             <div className="space-y-4">
-              <h1 className="max-w-4xl text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-7xl">
+              <h1 className="gradient-heading max-w-4xl text-4xl font-semibold tracking-tight sm:text-5xl lg:text-7xl">
                 {site.name}
               </h1>
               <p className="max-w-3xl text-base font-medium leading-8 text-cyan-200 sm:text-lg lg:text-xl">
@@ -82,15 +82,15 @@ export default function Home() {
             <div className="grid gap-3 sm:grid-cols-3">
               <Card className="p-4">
                 <p className="text-xs uppercase tracking-[0.22em] text-slate-400">Focus</p>
-                <p className="mt-2 text-sm font-medium text-white">Growth, automation, conversion</p>
+                <p className="gradient-card-title mt-2 text-sm font-medium">Growth, automation, conversion</p>
               </Card>
               <Card className="p-4">
                 <p className="text-xs uppercase tracking-[0.22em] text-slate-400">Location</p>
-                <p className="mt-2 text-sm font-medium text-white">Malaysia / Remote</p>
+                <p className="gradient-card-title mt-2 text-sm font-medium">Malaysia / Remote</p>
               </Card>
               <Card className="p-4">
                 <p className="text-xs uppercase tracking-[0.22em] text-slate-400">Current</p>
-                <p className="mt-2 text-sm font-medium text-white">Growth Marketing Manager</p>
+                <p className="gradient-card-title mt-2 text-sm font-medium">Growth Marketing Manager</p>
               </Card>
             </div>
           </div>
@@ -109,7 +109,7 @@ export default function Home() {
                   <GridIcon className="h-5 w-5" />
                 </span>
                 <div>
-                  <p className="text-sm font-medium text-white">Founder-grade systems</p>
+                  <p className="gradient-card-title text-sm font-medium">Founder-grade systems</p>
                   <p className="text-xs text-slate-400">strategy + execution + design</p>
                 </div>
               </div>
@@ -135,7 +135,7 @@ export default function Home() {
                   <BoltIcon className="h-5 w-5" />
                 </span>
                 <div>
-                  <p className="text-sm font-medium text-white">Hybrid advantage</p>
+                  <p className="gradient-card-title text-sm font-medium">Hybrid advantage</p>
                   <p className="text-xs text-slate-400">Growth + automation + design + web</p>
                 </div>
               </div>
@@ -244,7 +244,7 @@ export default function Home() {
                 <p className="text-xs font-semibold uppercase tracking-[0.26em] text-cyan-300/90">
                   Contact / Footer
                 </p>
-                <h2 className="mt-3 text-2xl font-semibold tracking-tight text-white sm:text-3xl">
+                <h2 className="gradient-heading mt-3 text-2xl font-semibold tracking-tight sm:text-3xl">
                   Let’s build systems that make growth easier to scale.
                 </h2>
                 <p className="mt-3 max-w-2xl text-sm leading-7 text-slate-300 sm:text-base">
