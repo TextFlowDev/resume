@@ -1,4 +1,5 @@
 import { Card } from "@/components/ui/card";
+import { BriefcaseIcon } from "@/components/icons";
 
 type Props = {
   company: string;
@@ -14,7 +15,10 @@ export function ExperienceItem({ company, title, period, summary }: Props) {
       <div className="relative pl-2">
         <div className="flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between sm:gap-4">
           <div>
-            <h3 className="text-base font-semibold text-white">{company}</h3>
+            <div className="flex items-center gap-2">
+              <BriefcaseIcon className="h-4 w-4 text-cyan-300" />
+              <h3 className="text-base font-semibold text-white">{company}</h3>
+            </div>
             <p className="text-sm text-cyan-300">{title}</p>
           </div>
           <p className="text-xs uppercase tracking-[0.2em] text-slate-400">{period}</p>

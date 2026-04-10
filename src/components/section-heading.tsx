@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { ChevronRightIcon } from "@/components/icons";
 
 type Props = {
   eyebrow: string;
@@ -15,9 +16,10 @@ export function SectionHeading({
 }: Props) {
   return (
     <div className={cn("max-w-3xl", className)}>
-      <p className="text-xs font-semibold uppercase tracking-[0.28em] text-cyan-300/90">
-        {eyebrow}
-      </p>
+      <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.28em] text-cyan-300/90">
+        <ChevronRightIcon className="h-4 w-4" />
+        <p>{eyebrow}</p>
+      </div>
       <h2 className="mt-3 text-2xl font-semibold tracking-tight text-white sm:text-3xl">
         {title}
       </h2>

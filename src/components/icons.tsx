@@ -95,3 +95,29 @@ export function BoltIcon(props: IconProps) {
     </Svg>
   );
 }
+
+export function ChevronRightIcon(props: IconProps) {
+  return (
+    <Svg {...props}>
+      <path d="m9 6 6 6-6 6" />
+    </Svg>
+  );
+}
+
+export function BriefcaseIcon(props: IconProps) {
+  return (
+    <Svg {...props}>
+      <rect x="3" y="7" width="18" height="13" rx="2" />
+      <path d="M9 7V6a3 3 0 0 1 6 0v1" />
+      <path d="M3 12h18" />
+    </Svg>
+  );
+}
+
+export function StarIcon(props: IconProps) {
+  return (
+    <Svg {...props}>
+      <path d="m12 2 2.9 6 6.1.9-4.4 4.2 1 6.1-5.6-3-5.6 3 1-6.1L3 8.9 9.1 8 12 2Z" />
+    </Svg>
+  );
+}

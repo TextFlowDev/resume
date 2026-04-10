@@ -43,7 +43,7 @@ function SectionShell({
 
 export default function Home() {
   return (
-    <div id="top" className="relative overflow-hidden">
+    <div id="top" className="relative overflow-hidden section-soft">
       <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 mx-auto h-[32rem] max-w-7xl bg-[radial-gradient(circle_at_top,rgba(103,232,249,0.15),transparent_30%),radial-gradient(circle_at_80%_10%,rgba(129,140,248,0.15),transparent_24%)]" />
       <FloatingNav />
 
@@ -95,8 +95,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="grid gap-4 lg:justify-self-end">
-            <TerminalCard />
+            <div className="grid gap-4 lg:justify-self-end">
+              <TerminalCard />
             <Card className="grid gap-4 p-5 md:grid-cols-2">
               <div>
                 <p className="text-xs uppercase tracking-[0.22em] text-slate-400">Now building</p>
@@ -160,7 +160,9 @@ export default function Home() {
                 className="group p-5 transition-transform duration-300 hover:-translate-y-1"
                 style={{ animationDelay: `${index * 70}ms` }}
               >
-                <div className="mb-4 h-10 w-10 rounded-2xl bg-gradient-to-br from-cyan-400/15 via-indigo-400/15 to-emerald-400/15 ring-1 ring-white/5" />
+                <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-400/15 via-indigo-400/15 to-emerald-400/15 ring-1 ring-white/5">
+                  <SparkIcon className="h-4 w-4 text-cyan-200" />
+                </div>
                 <h3 className="text-base font-semibold text-white">{item}</h3>
                 <p className="mt-2 text-sm leading-7 text-slate-300">
                   Technical enough to implement. Strategic enough to connect to revenue.

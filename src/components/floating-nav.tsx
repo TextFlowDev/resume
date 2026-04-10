@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { navItems, site } from "@/data/resume";
-import { SparkIcon } from "@/components/icons";
+import { SparkIcon, ChevronRightIcon } from "@/components/icons";
 
 export function FloatingNav() {
   return (
@@ -11,7 +11,7 @@ export function FloatingNav() {
           href="#top"
           className="flex min-w-0 items-center gap-3 rounded-full border border-slate-700/80 bg-slate-900/70 px-3 py-2 text-sm font-semibold text-white transition-colors hover:border-cyan-400/40"
         >
-          <span className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-cyan-400 to-indigo-500 text-slate-950">
+          <span className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-cyan-400 to-indigo-500 text-slate-950 shadow-lg shadow-cyan-500/20">
             <SparkIcon className="h-4 w-4" />
           </span>
           <span className="truncate">Ahmad AI</span>
@@ -22,8 +22,9 @@ export function FloatingNav() {
             <Link
               key={item.href}
               href={item.href}
-              className="rounded-full px-3 py-2 text-sm text-slate-300 transition-colors hover:bg-white/5 hover:text-white"
+              className="inline-flex items-center gap-1 rounded-full px-3 py-2 text-sm text-slate-300 transition-colors hover:bg-white/5 hover:text-white"
             >
+              <ChevronRightIcon className="h-3 w-3 opacity-70" />
               {item.label}
             </Link>
           ))}

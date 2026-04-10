@@ -1,4 +1,5 @@
 import { Card } from "@/components/ui/card";
+import { StarIcon } from "@/components/icons";
 
 type Props = {
   name: string;
@@ -15,7 +16,7 @@ export function ProjectCard({ name, category, summary, impact }: Props) {
           <span className="inline-flex rounded-full border border-cyan-400/20 bg-cyan-400/10 px-3 py-1 text-xs font-medium text-cyan-200">
             {category}
           </span>
-          <span className="h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_20px_rgba(52,211,153,0.9)]" />
+          <StarIcon className="h-5 w-5 text-emerald-300" />
         </div>
         <h3 className="mt-4 text-lg font-semibold tracking-tight text-white">{name}</h3>
         <p className="mt-3 text-sm leading-7 text-slate-300">{summary}</p>
