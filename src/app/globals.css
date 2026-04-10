@@ -27,10 +27,10 @@ html {
 body {
   min-height: 100vh;
   background:
-    radial-gradient(circle at top left, rgba(103, 232, 249, 0.16), transparent 28%),
-    radial-gradient(circle at top right, rgba(129, 140, 248, 0.14), transparent 24%),
-    radial-gradient(circle at 50% 20%, rgba(52, 211, 153, 0.09), transparent 24%),
-    linear-gradient(180deg, #020617 0%, #020617 40%, #0f172a 100%);
+    radial-gradient(circle at top left, rgba(103, 232, 249, 0.12), transparent 28%),
+    radial-gradient(circle at top right, rgba(129, 140, 248, 0.1), transparent 24%),
+    radial-gradient(circle at 50% 20%, rgba(52, 211, 153, 0.06), transparent 24%),
+    linear-gradient(180deg, #020617 0%, #020617 100%);
   color: var(--foreground);
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
 }
@@ -45,7 +45,7 @@ body::before {
     linear-gradient(90deg, rgba(148, 163, 184, 0.04) 1px, transparent 1px);
   background-size: 72px 72px;
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), transparent 85%);
-  opacity: 0.12;
+  opacity: 0.06;
 }
 
 body::after {
@@ -53,7 +53,7 @@ body::after {
   position: fixed;
   inset: 0;
   pointer-events: none;
-  background: radial-gradient(circle at center, transparent 62%, rgba(2, 6, 23, 0.18));
+  background: radial-gradient(circle at center, transparent 68%, rgba(2, 6, 23, 0.08));
 }
 
 * {
@@ -125,9 +125,9 @@ body::after {
 
 .glass {
   background:
-    linear-gradient(180deg, rgba(15, 23, 42, 0.68), rgba(2, 6, 23, 0.58)),
-    linear-gradient(135deg, rgba(103, 232, 249, 0.05), rgba(129, 140, 248, 0.03));
-  border: 1px solid var(--border);
+    linear-gradient(180deg, rgba(15, 23, 42, 0.54), rgba(2, 6, 23, 0.46)),
+    linear-gradient(135deg, rgba(103, 232, 249, 0.035), rgba(129, 140, 248, 0.02));
+  border: 1px solid rgba(148, 163, 184, 0.1);
   backdrop-filter: blur(18px);
 }
 
@@ -157,7 +157,7 @@ body::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at top left, rgba(103, 232, 249, 0.06), transparent 34%);
+  background: radial-gradient(circle at top left, rgba(103, 232, 249, 0.03), transparent 34%);
   pointer-events: none;
 }
 
